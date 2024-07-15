@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1> <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M270-80q-45 0-77.5-29.92Q160-139.85 160-184v-562q0-37.04 22.58-66.29 22.58-29.24 59.09-37.04l385-78.67v626.67l-366.34 76.66q-14.43 3.13-24.04 14.86-9.62 11.73-9.62 25.81 0 16.33 13 26.83t30.33 10.5h463.33V-800H800v720H270Zm76.67-229.67L560-354v-492l-213.33 43v493.33ZM280-295.79V-789l-18.33 3.67q-15 3.33-25 13.71-10 10.39-10 25.62v466.33q7.7-4.13 16.18-7.23 8.48-3.1 17.48-4.77l19.67-4.12ZM226.67-781v501.33V-781Z"/></svg>Booksky</h1>
+    </div>
+
+    <div id="container">
+        <div class="box-container">
+            <h2><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M499-268.33 853.33-622 782-692.67 428.33-339 499-268.33Zm-273.67 61q-92-5.67-138.66-41Q40-283.67 40-349q0-61.67 51.83-100.5 51.84-38.83 144.17-46.83 42.33-3.67 63.17-14.84Q320-522.33 320-542q0-28-29.17-42.67-29.16-14.66-97.16-21.33l5.66-66.67Q293-664 339.83-631.5q46.84 32.5 46.84 89.5 0 48.33-37.84 77.67Q311-435 241.33-429.67q-67.33 5-101 25.17-33.66 20.17-33.66 55.5 0 35 29.66 53.17Q166-277.67 228.67-274l-3.34 66.67ZM518-193 353-358l392.67-392q16-16 36.83-15.67 20.83.34 36.83 15.67l91.34 90.67q16 16 16 37.16 0 21.17-16 37.17L518-193Zm-159 33q-17 4-30-9t-9-30l33-159 165 165-159 33Z"/></svg>Ponniyin Selvan</h2>
+            <h5>Kalkki</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequatur dolore facere aspernatur praesentium, adipisci ipsam atque sint. In porro, libero ex voluptatem modi voluptatibus cumque repellendus dolor quos nemo expedita esse adipisci, totam alias! Itaque vero ad facere magni reiciendis id accusantium ratione sapiente sit! Quod ex quam veniam!</p>
+            <button class="button" onclick="deleteitem(event)">delete</button>
+        </div>
+    </div>
+    <button class="add-btn" id="add-btn"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M513.33-385.33H580v-128h128V-580H580v-128h-66.67v128h-128v66.67h128v128ZM280-213.33q-27 0-46.83-19.84Q213.33-253 213.33-280v-533.33q0-27 19.84-46.84Q253-880 280-880h533.33q27 0 46.84 19.83Q880-840.33 880-813.33V-280q0 27-19.83 46.83-19.84 19.84-46.84 19.84H280Zm0-66.67h533.33v-533.33H280V-280ZM146.67-80q-27 0-46.84-19.83Q80-119.67 80-146.67v-600h66.67v600h600V-80h-600ZM280-813.33V-280v-533.33Z"/></svg></button>
+
+    <div class="overlayer" id="overlayer"></div>
+    <div class="float-container" id="float-container">
+        <input type="text" placeholder="Book Title" id="input-title">
+        <input type="text" placeholder="Book Author" id="input-author">
+        <textarea name=""  cols="20" rows="5" placeholder="Write A Story" id="textarea-story"></textarea>
+        <button id="new-box-btn">Add</button>
+        <button id="cancel-btn">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
